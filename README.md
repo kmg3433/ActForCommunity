@@ -7,7 +7,7 @@ Hey guys, I'm glad to work with you guys. Let me introduce some simple rules of 
 Documents should be written in [markdown](https://www.markdownguide.org/basic-syntax/).
 
 ## 2. git rules
-We are a small project, so I decide not to use gitflow standard. But I still suggest use different branches so we can have a better management, it's not mandatory. **STATE CLEAR WHAT YOU DID IN COMMIT**. This is important and mandatory, never leave a blank of commit. I'll review each PR before merging.
+We are a small project, so I decide not to use gitflow standard. But I still suggest use different branches so we can have a better management, it's not mandatory. **STATE CLEARLY WHAT YOU DID IN COMMIT**. This is important and mandatory, never leave a blank of commit. I'll review each PR before merging.
 
 ## 3. code conventions
 1. I hope we can unify the format of naming into camel-case(even though the repo name is in pascal).
@@ -39,19 +39,24 @@ We are a small project, so I decide not to use gitflow standard. But I still sug
    let windowHeight = 480;
    ```
 4. ### comments
-   _Good 👍🏻_
+   _Bad 👎🏻_
 
    ```javascript
    const cdr = 700;
    ```
 
-   _Bad 👎🏻_
-   ```
-   
+   _Good 👍🏻_
+
+   More often comments should contain some 'why' and not some 'what'. If the 'what' is not clear in the code, the code is probably too messy.
+   ```javascript
+    // The number of 700ms has been calculated empirically based on UX A/B test results.
+    // @see: <link to experiment or to related JIRA task or to something that explains number 700 in details>
+    const callbackDebounceRate = 700;
    ```
    Also use only English in comments.
 5. ### exception handling
    Don't just ignore errors.
+
    _Bad 👎🏻_
 
    ```javascript
