@@ -39,11 +39,11 @@ body {
 
 .transparent-section {
     height: 300px; /* 设置高度 */
-    background: rgba(255, 255, 255, 0.7); /* 半透明白色背景 */
-    background-image: url('image.jpg'); /* 替换为你的背景图片路径 */
+    background: rgba(255, 255, 255, 0.7);
+    background-image: url('image.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* 背景图固定 */
+    background-attachment: fixed;
     color: #333;
     display: flex;
     justify-content: center;
@@ -80,10 +80,10 @@ body {
 }
 
 .circle img {
-    border-radius: 50%; /* 圆形图片 */
-    width: 150px; /* 图片宽度 */
-    height: 150px; /* 图片高度 */
-    object-fit: cover; /* 保持图片比例 */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .circle p {
@@ -108,11 +108,11 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* 图片之间的间距 */
+    gap: 10px;
 }
 
 .item {
-    flex: 1 1 calc(50% - 10px); /* 每个项目的宽度为50%，减去间距的一半 */
+    flex: 1 1 calc(50% - 10px); /* 50% width of objects minus gap */
     max-width: calc(50% - 10px);
     box-sizing: border-box;
 }
@@ -136,7 +136,6 @@ body {
     z-index: -1;
 }
 
-/* 顶部导航栏无背景色 */
 .navbar-top .nav-link {
     color: #535353;
     font-size: 1.1rem;
@@ -166,5 +165,5 @@ body {
 body::after {
     content: '';
     display: block;
-    height: 100px; /* 空白的高度 */
+    height: 100px; /* height of blank */
 }
