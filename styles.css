@@ -1,0 +1,170 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.top-left-logo {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    border-radius: 50px;
+    font-family: 'Amaranth', sans-serif;
+    z-index: 2;
+}
+
+.main-title{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #343a40;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.picture-under-title { /*center the image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 50px;
+
+}
+
+.text-under-picture {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.5rem;
+    color: #343a40;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.transparent-section {
+    height: 300px; /* 设置高度 */
+    background: rgba(255, 255, 255, 0.7); /* 半透明白色背景 */
+    background-image: url('image.jpg'); /* 替换为你的背景图片路径 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 背景图固定 */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-left{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.5rem;
+    color: #343a40;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.btn-right{
+    position: absolute;
+    right: 50px;
+    border-radius: 50px;
+    font-family: 'Amaranth', sans-serif;
+    z-index: 2;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 960px;
+}
+
+.circle {
+    text-align: center;
+}
+
+.circle img {
+    border-radius: 50%; /* 圆形图片 */
+    width: 150px; /* 图片宽度 */
+    height: 150px; /* 图片高度 */
+    object-fit: cover; /* 保持图片比例 */
+}
+
+.circle p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.background {
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 图片之间的间距 */
+}
+
+.item {
+    flex: 1 1 calc(50% - 10px); /* 每个项目的宽度为50%，减去间距的一半 */
+    max-width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.top-right-button {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    border-radius: 50px;
+    font-family: 'Amaranth', sans-serif;
+    z-index: 2;
+}
+
+.navbar-top{
+    z-index: -1;
+}
+
+/* 顶部导航栏无背景色 */
+.navbar-top .nav-link {
+    color: #535353;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.navbar-top .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-bottom {
+    background-color: #343a40;
+    padding: 15px 0;
+}
+
+.navbar-bottom .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.navbar-bottom .nav-link:hover {
+    color: #ffc107;
+}
+body::after {
+    content: '';
+    display: block;
+    height: 100px; /* 空白的高度 */
+}
