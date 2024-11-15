@@ -11,54 +11,53 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-        }
-
-        .top-right-button {
-            position: absolute;
-            top: 20px;
-            right: 50px;
-            border-radius: 50px;
-            font-family: 'Amaranth', sans-serif;
-            z-index: 2;
-        }
-
-        .navbar-top{
-            z-index: -1;
-        }
-
-        /* 顶部导航栏无背景色 */
-        .navbar-top .nav-link {
-            color: #535353;
-            font-size: 1.1rem;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-
-        .navbar-top .nav-link:hover {
-            color: #ffc107;
-        }
-
-        .navbar-bottom {
-            background-color: #343a40;
-            padding: 15px 0;
-        }
-
-        .navbar-bottom .nav-link {
-            color: #ffffff;
-            font-size: 1.1rem;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-
-        .navbar-bottom .nav-link:hover {
-            color: #ffc107;
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+<!-- Logo -->
+<img src="image.jpg" class="top-left-logo" alt="Logo" width="70" height="70">
+<!-- Main Title -->
+<h1 class="main-title">Act for community</h1>
+<!-- Picture Under Title -->
+<img src="image.jpg" class="picture-under-title" alt="Picture Under Title" width="300" height="300">
+<!-- text under picture -->
+<p class="text-under-picture">At ActforCommunity, we believe that every act of kindness creates a ripple of positive change.</p>
+<div class="transparent-section">
+    <h2>Current projects</h2>
+    <div class="circle-container">
+        <div class="circle">
+            <img src="image.jpg" alt="Image 1">
+            <p>Project1</p>
+        </div>
+        <div class="circle">
+            <img src="image.jpg" alt="Image 2">
+            <p>Project2</p>
+        </div>
+        <div class="circle">
+            <img src="image.jpg" alt="Image 3">
+            <p>Project3</p>
+        </div>
+    </div>
+</div>
+<!-- background -->
+<div class="background">
+    <h1>Who are we?</h1>
+    <p class="text-under-picture">ActforCommunity is more than just a volunteer club; we are a passionate group of individuals committed to addressing pressing global issues and building lasting connections with like-minded people. Our vision is to empower communities by organizing social projects and fundraisers that support vulnerable populations, including families with low incomes and individuals with disabilities.
+    </p>
+</div>
+<div class="gallery">
+    <div class="item"><img src="pic1.jpg" alt="Image 1"></div>
+    <div class="item"><img src="pic2.jpg" alt="Image 2"></div>
+    <div class="item"><img src="pic3.jpg" alt="Image 3"></div>
+    <div class="item"><img src="pic4.jpg" alt="Image 4"></div>
+</div>
+<p class="text-under-picture">Through our various initiatives, we not only strive to help those in need but also seek to foster a spirit of social responsibility among our members.</p>
+<h1 class="main-title">What We Strive For</h1>
+<p class="text-left">We aim to build a more active and conscious community that is engaged with global challenges and aware of opportunities for positive change. Through our various initiatives, we not only strive to help those in need but also seek to foster a spirit of social responsibility among our members.</p>
+<h1 class="main-title">Need our help?</h1>
+<p class="text-left">Something here</p>
+<button class="btn-right" onclick="location.href='contactUs.html'">Apply now</button>
 <!-- Join Us Button -->
 <button class="btn btn-primary top-right-button" onclick="location.href='joinUs.html'">Join Us</button>
 
